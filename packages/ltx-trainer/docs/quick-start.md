@@ -10,7 +10,7 @@ Before you begin, ensure you have:
    Download `ltx-2-19b-dev.safetensors` from: [HuggingFace Hub](https://huggingface.co/Lightricks/LTX-2)
 2. **Gemma Text Encoder** - A local directory containing the Gemma model (required for LTX-2).
    Download from: [HuggingFace Hub](https://huggingface.co/google/gemma-3-12b-it-qat-q4_0-unquantized/)
-3. **Linux with CUDA** - The trainer requires `triton` which is Linux-only
+3. **CUDA GPU** - Linux or Windows with CUDA 13+ recommended. Note: `torch.compile` accelerate configs (e.g., `ddp_compile.yaml`) require Triton, which is Linux-only
 4. **GPU with sufficient VRAM** - 80GB recommended for the standard config. For GPUs with 32GB VRAM (e.g., RTX 5090),
    use the [low VRAM config](../configs/ltx2_av_lora_low_vram.yaml) which enables INT8 quantization and other
    memory optimizations

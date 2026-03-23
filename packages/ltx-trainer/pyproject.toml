@@ -11,7 +11,7 @@ dependencies = [
     "ltx-core",
     "accelerate>=1.2.1",
     "av>=14.2.1",
-    "bitsandbytes >=0.45.2; sys_platform == 'linux'",
+    "bitsandbytes >=0.45.2",
     "huggingface-hub[hf-xet]>=0.31.4",
     "imageio>=2.37.0",
     "imageio-ffmpeg>=0.6.0",

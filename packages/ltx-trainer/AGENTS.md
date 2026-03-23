@@ -479,7 +479,7 @@ Width and height must be divisible by 32.
 
 ### Platform Requirements
 
-- Linux required (uses `triton` which is Linux-only)
+- Linux or Windows with CUDA (`torch.compile` configs require Triton, which is Linux-only)
 - CUDA GPU with 24GB+ VRAM recommended (80GB+ for full fine-tuning)
 
 ## Reference: ltx-core Key Components
